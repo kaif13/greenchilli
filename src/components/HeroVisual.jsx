@@ -28,10 +28,10 @@ export default function HeroVisual() {
             ? { duration: 0.5 }
             : {
                 opacity: { duration: 0.5, ease: "easeOut" },
-                x: { duration: 1.5, ease: [0.16, 1, 0.3, 1] },
-                y: { duration: 1.5, ease: [0.45, 0, 0.55, 1] },
-                rotate: { duration: 1.5, ease: [0.16, 1, 0.3, 1] },
-                scale: { duration: 1.5, ease: [0.16, 1, 0.3, 1] },
+                x: { duration: 0.9, ease: [0.16, 1, 0.3, 1] },
+                y: { duration: 0.9, ease: [0.45, 0, 0.55, 1] },
+                rotate: { duration: 0.9, ease: [0.16, 1, 0.3, 1] },
+                scale: { duration: 0.9, ease: [0.16, 1, 0.3, 1] },
               }
         }
       >
@@ -43,7 +43,7 @@ export default function HeroVisual() {
             duration: 3.8,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1.5,
+            delay: 0.9,
           }}
         >
           <div className="hero-pizza-stage">
@@ -52,6 +52,9 @@ export default function HeroVisual() {
               alt="Full tandoori paneer pizza"
               className="hero-pizza-img"
               fallbackText="Add pizza-hero.png"
+              loading="eager"
+              fetchPriority="high"
+              sizes="(max-width: 540px) 90vw, 520px"
             />
             <div className="hero-pizza-shadow" />
           </div>

@@ -28,6 +28,8 @@ export default function MenuSection({ onAddToCart, cartCounts }) {
                   alt={item.name}
                   emoji={item.emoji}
                   className="menu-img"
+                  loading={i < 3 ? "eager" : "lazy"}
+                  fetchPriority={i === 0 ? "high" : "auto"}
                 />
                 <div className="menu-photo-top">
                   <span

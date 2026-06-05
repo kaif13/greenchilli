@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
-import heroPizza from "../assets/pizza-hero-clean.png";
 import Dish from "./Dish.jsx";
+
+const heroPizza = "/pizza-hero-clean.png";
 
 export default function HeroVisual() {
   const reduceMotion = useReducedMotion();

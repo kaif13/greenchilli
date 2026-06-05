@@ -1,6 +1,6 @@
-import { PHONE, waLink } from "./data.js";
+import { waLink } from "./data.js";
 
-export default function FloatingActions() {
+export default function FloatingActions({ goToCart, cartCount }) {
   return (
     <>
       <a
@@ -15,11 +15,17 @@ export default function FloatingActions() {
         </svg>
         <span className="float-pulse" />
       </a>
-      <a className="float-btn call" href={`tel:+${PHONE}`} aria-label="Call">
+      <button
+        type="button"
+        className="float-btn cart"
+        onClick={goToCart}
+        aria-label={`Cart${cartCount ? ` with ${cartCount} items` : ""}`}
+      >
         <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
-          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z" />
+          <path d="M7 21c-.6 0-1.1-.2-1.5-.6S5 19.9 5 19.3s.2-1.1.6-1.5S6.4 17.2 7 17.2s1.1.2 1.5.6.6.9.6 1.5-.2 1.1-.6 1.5S7.6 21 7 21Zm10 0c-.6 0-1.1-.2-1.5-.6s-.6-.9-.6-1.5.2-1.1.6-1.5.9-.6 1.5-.6 1.1.2 1.5.6.6.9.6 1.5-.2 1.1-.6 1.5-.9.6-1.5.6ZM6.1 6l2.2 4.7h7l2.6-4.7H6.1Zm-1-2h14.6c.4 0 .7.2.9.5s.2.7 0 1L17 12.1c-.2.4-.6.6-1 .6H8l-1.1 2h12v2H6.5c-.8 0-1.4-.3-1.8-.9s-.4-1.2-.1-1.9l1.3-2.4L2.6 4H1V2h3c.4 0 .8.2 1 .6L5.1 4Z" />
         </svg>
-      </a>
+        {cartCount > 0 && <span className="float-count">{cartCount}</span>}
+      </button>
     </>
   );
 }

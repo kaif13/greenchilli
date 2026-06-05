@@ -6,7 +6,7 @@ export default function Footer({ scrollTo }) {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <div>
+        <div className="footer-brand">
           <div className="brand">
             <span className="brand-chilli">🌶️</span>
             <span>
@@ -35,8 +35,20 @@ export default function Footer({ scrollTo }) {
         </div>
       </div>
       <div className="copyright">
-        © {new Date().getFullYear()} Green Chilli Restaurant, Ballia. All rights
-        reserved.
+        <span>
+          © {new Date().getFullYear()} Green Chilli Restaurant, Ballia. All rights
+          reserved.
+        </span>
+        <span>
+          Made by{" "}
+          <a
+            href="https://kaifwebstudio.in"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Kaif Web Studio
+          </a>
+        </span>
       </div>
     </footer>
   );

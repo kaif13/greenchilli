@@ -1241,12 +1241,27 @@
 }
 
 .copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 14px;
   margin-top: 36px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 13px;
   text-align: center;
+}
+
+.copyright a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: var(--lime);
 }
 
 .float-btn {
@@ -1272,11 +1287,30 @@
   background: #25d366;
 }
 
-.float-btn.call {
+.float-btn.cart {
   bottom: 92px;
   width: 48px;
   height: 48px;
-  background: var(--flame);
+  border: 0;
+  background: linear-gradient(135deg, var(--flame), var(--flame2));
+  cursor: pointer;
+}
+
+.float-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  display: grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border: 2px solid #0a0d08;
+  border-radius: 999px;
+  background: var(--green);
+  color: #0a0d08;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .float-pulse {
@@ -1530,6 +1564,37 @@
 
   .float-btn {
     right: 14px;
+  }
+
+  .footer {
+    padding: 38px 16px 24px;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 18px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer p {
+    max-width: 100%;
+  }
+
+  .footer-links button,
+  .footer-social a {
+    min-height: 34px;
+    font-size: 15px;
+  }
+
+  .copyright {
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 28px;
+    line-height: 1.5;
   }
 
   .eyebrow,

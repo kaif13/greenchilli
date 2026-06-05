@@ -195,7 +195,7 @@ export default function GreenChilliRestaurant() {
         </>
       )}
       <Footer scrollTo={scrollTo} />
-      <FloatingActions />
+      <FloatingActions goToCart={goToCart} cartCount={cartCount} />
     </div>
   );
 }

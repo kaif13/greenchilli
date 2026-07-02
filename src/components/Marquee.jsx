@@ -4,8 +4,8 @@ export default function Marquee() {
       <div className="marquee-track">
         {Array.from({ length: 2 }).map((_, i) => (
           <span key={i}>
-            🌶️ Flat 20% OFF on your first order &nbsp;•&nbsp; 🎂 Free cake on
-            birthday bookings above 20 guests &nbsp;•&nbsp; 🚀 Order on WhatsApp
+            Spicy fast food in Chitbaragaon &nbsp;•&nbsp; Birthday bookings available
+            for groups &nbsp;•&nbsp; Fresh pizzas, rolls, noodles and snacks
             - ready in 20 mins &nbsp;•&nbsp;
           </span>
         ))}
@@ -13,3 +13,4 @@ export default function Marquee() {
     </div>
   );
 }
+

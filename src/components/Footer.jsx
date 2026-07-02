@@ -10,10 +10,10 @@ export default function Footer({ scrollTo }) {
           <div className="brand">
             <span className="brand-chilli">🌶️</span>
             <span>
-              Green Chilli<small>BALLIA</small>
+              Green Chilli<small>CHITBARAGAON</small>
             </span>
           </div>
-          <p>Ballia&apos;s favourite fast food destination since 2013.</p>
+          <p>Chitbaragaon&apos;s favourite fast food destination since 2013.</p>
         </div>
         <div className="footer-links">
           {links.map((link) => (
@@ -36,16 +36,12 @@ export default function Footer({ scrollTo }) {
       </div>
       <div className="copyright">
         <span>
-          © {new Date().getFullYear()} Green Chilli Restaurant, Ballia. All rights
-          reserved.
+          © {new Date().getFullYear()} Green Chilli Restaurant, Chitbaragaon.
+          All rights reserved.
         </span>
         <span>
           Made by{" "}
-          <a
-            href="https://kaifwebstudio.in"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://kaifwebstudio.in" target="_blank" rel="noreferrer">
             Kaif Web Studio
           </a>
         </span>

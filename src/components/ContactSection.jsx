@@ -23,7 +23,7 @@ export default function ContactSection({
               <span>📍</span>
               <div>
                 <strong>Address</strong>
-                <p>Station Road, Ballia, Uttar Pradesh 277001</p>
+                <p>Bariya Pokhra, Ballia, Uttar Pradesh 277001</p>
               </div>
             </div>
             <div className="info-row">
@@ -44,7 +44,7 @@ export default function ContactSection({
           <div className="map-wrap">
             <iframe
               title="Green Chilli Restaurant Ballia map"
-              src="https://www.google.com/maps?q=Ballia,+Uttar+Pradesh&z=13&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6878.7822482678175!2d84.0019535335613!3d25.7421950017356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39926de495af836f%3A0xf60e2c7e42a3f4!2sGreen%20Chilli%20Restaurant%20%26%20Fast%20Food!5e0!3m2!1sen!2sin!4v1782990757006!5m2!1sen!2sin"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

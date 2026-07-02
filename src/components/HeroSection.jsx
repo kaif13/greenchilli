@@ -23,7 +23,7 @@ export default function HeroSection({ isOpen, scrollTo }) {
           </Reveal>
           <Reveal delay={160}>
             <p className="hero-sub">
-              Ballia&apos;s favourite fast food spot - wood-fired pizzas,
+              Chitbaragaon&apos;s favourite fast food spot - wood-fired pizzas,
               sizzling momos, and that legendary green chilli kick. Made fresh,
               served fast.
             </p>
@@ -32,11 +32,11 @@ export default function HeroSection({ isOpen, scrollTo }) {
             <div className="hero-btns">
               <a
                 className="btn btn-primary"
-                href={waLink("Hi Green Chilli! I'd like to order.")}
+                href={waLink("Hi Green Chilli! I have a question about your menu.")}
                 target="_blank"
                 rel="noreferrer"
               >
-                Order on WhatsApp
+                Ask on WhatsApp
               </a>
               <button className="btn btn-ghost" onClick={() => scrollTo("menu")}>
                 View Menu
@@ -49,7 +49,7 @@ export default function HeroSection({ isOpen, scrollTo }) {
                 <strong>
                   <Counter end={50000} suffix="+" />
                 </strong>
-                <span>Orders served</span>
+                <span>Guests served</span>
               </div>
               <div>
                 <strong>
@@ -61,7 +61,7 @@ export default function HeroSection({ isOpen, scrollTo }) {
                 <strong>
                   <Counter end={12} />
                 </strong>
-                <span>Years in Ballia</span>
+                <span>Years in Chitbaragaon</span>
               </div>
             </div>
           </Reveal>
@@ -73,3 +73,4 @@ export default function HeroSection({ isOpen, scrollTo }) {
     </header>
   );
 }
+

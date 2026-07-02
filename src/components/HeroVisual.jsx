@@ -99,7 +99,7 @@ export default function HeroVisual() {
         }
         transition={
           reduceMotion
-            ? { duration: 0.4, delay: 0.35 }
+            ? { duration: 0.1, delay: 0.15 }
             : {
                 x: { duration: 0.6, delay: 1.55, ease: [0.16, 1, 0.3, 1] },
                 opacity: { duration: 0.6, delay: 1.55 },
@@ -115,7 +115,7 @@ export default function HeroVisual() {
         <div className="hv-chip-ic">🍔</div>
         <div className="hv-card-info">
           <strong>Veg Burger</strong>
-          <span>₹99</span>
+          <span>₹35</span>
         </div>
       </motion.div>
     </motion.div>

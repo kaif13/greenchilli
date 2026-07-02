@@ -6,7 +6,7 @@ export default function GallerySection() {
   return (
     <section id="gallery" className="section gallery-section">
       <Reveal>
-        <p className="eyebrow">📸 Fresh From Green Chilli</p>
+        <p className="eyebrow">Fresh From Green Chilli</p>
       </Reveal>
       <Reveal delay={60}>
         <h2 className="sec-title">
@@ -22,11 +22,7 @@ export default function GallerySection() {
 
       <div className="gallery-grid">
         {GALLERY.map((item, index) => (
-          <Reveal
-            key={item.title}
-            delay={(index % 3) * 70}
-            className={item.featured ? "gallery-featured" : ""}
-          >
+          <Reveal key={item.title} delay={(index % 4) * 50}>
             <article className="gallery-card">
               <Dish
                 src={item.src}

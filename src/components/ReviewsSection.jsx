@@ -5,7 +5,7 @@ export default function ReviewsSection() {
   return (
     <section id="reviews" className="section section-alt">
       <Reveal>
-        <p className="eyebrow">💬 Loved by Ballia</p>
+        <p className="eyebrow">💬 Loved by Chitbaragaon</p>
       </Reveal>
       <Reveal delay={60}>
         <h2 className="sec-title pb-6">
@@ -35,3 +35,4 @@ export default function ReviewsSection() {
     </section>
   );
 }
+

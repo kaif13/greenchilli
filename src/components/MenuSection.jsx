@@ -31,7 +31,7 @@ export default function MenuSection() {
   };
 
   return (
-    <section id="menu" className="section">
+    <section id="menu" className="section pt-0">
       <Reveal>
         <p className="eyebrow">Our Kitchen</p>
       </Reveal>
@@ -40,7 +40,7 @@ export default function MenuSection() {
           The <span className="flame-text">Menu</span>
         </h2>
       </Reveal>
-      <Reveal delay={120}>/ </Reveal>
+      <Reveal> &nbsp; </Reveal>
       <div className="menu-tabs" role="tablist" aria-label="Menu categories">
         {MENU.map((item) => (
           <button
@@ -76,8 +76,6 @@ export default function MenuSection() {
                     emoji={item.emoji}
                     fallbackText={`Add photo for ${item.name}`}
                     className="menu-img"
-                    loading={i < 4 ? "eager" : "lazy"}
-                    fetchPriority={i === 0 ? "high" : "auto"}
                   />
                   <div className="menu-photo-top">
                     <span className="veg-dot veg" title="Vegetarian">

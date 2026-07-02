@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import Dish from "./Dish.jsx";
 
-const heroPizza = "/pizza-hero-clean.png";
+const heroPizza = "/pizza-hero-clean-600.png";
 
 export default function HeroVisual() {
   const reduceMotion = useReducedMotion();
@@ -47,7 +47,7 @@ export default function HeroVisual() {
             delay: 0.9,
           }}
         >
-          <div className="hero-pizza-stage">
+          <div>
             <Dish
               src={heroPizza}
               alt="Full tandoori paneer pizza"
@@ -57,7 +57,6 @@ export default function HeroVisual() {
               fetchPriority="high"
               sizes="(max-width: 540px) 90vw, 520px"
             />
-            <div className="hero-pizza-shadow" />
           </div>
         </motion.div>
       </motion.div>

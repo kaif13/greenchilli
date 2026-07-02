@@ -6,17 +6,27 @@ export const waLink = (text) =>
 const img = (id, w = 800) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
 
-const menuImg = (name) => `/menu/${name}.png`;
-const galleryImg = (name) => `/gallery/${name}.png`;
+const menuImg = (name) => `/menu/${name}.jpg`;
+const galleryImg = (name) => `/gallery/${name}.jpg`;
 
 export const HERO_IMG = img("1565299624946-b28f40a0ae38", 1100);
 
 const single = (value) => [{ value }];
 const halfFull = (half, full) => [
-  { options: [{ label: "Half", value: half }, { label: "Full", value: full }] },
+  {
+    options: [
+      { label: "Half", value: half },
+      { label: "Full", value: full },
+    ],
+  },
 ];
 const smallMedium = (small, medium) => [
-  { options: [{ label: "Small", value: small }, { label: "Medium", value: medium }] },
+  {
+    options: [
+      { label: "Small", value: small },
+      { label: "Medium", value: medium },
+    ],
+  },
 ];
 
 export const MENU = [
@@ -444,12 +454,6 @@ export const GALLERY = [
 
 export const REVIEWS = [
   {
-    name: "Rahul Verma",
-    city: "Chitbaragaon",
-    stars: 5,
-    text: "Best pizza in Chitbaragaon, hands down. The tandoori paneer is unreal and the place is super clean.",
-  },
-  {
     name: "Sneha Gupta",
     city: "Chitbaragaon",
     stars: 5,
@@ -457,27 +461,14 @@ export const REVIEWS = [
   },
   {
     name: "Amit Singh",
-    city: "Bansdih",
+    city: "Ashapur",
     stars: 4,
     text: "Momos and chilli paneer are a must-try. Fast service even on weekends. Worth the drive.",
   },
   {
-    name: "Pooja Yadav",
+    name: "Kaif",
     city: "Chitbaragaon",
     stars: 5,
     text: "Affordable, tasty and the staff is so polite. The special thali is heavy and full of flavour.",
   },
-  {
-    name: "Kabir Khan",
-    city: "Rasra",
-    stars: 5,
-    text: "Visited for a small party. Everyone kept asking where the food was from. 10/10 will visit again.",
-  },
-  {
-    name: "Anjali Mishra",
-    city: "Chitbaragaon",
-    stars: 4,
-    text: "Cozy vibe, great for hanging out with friends. The cold coffee thickshake is my weekly fix.",
-  },
 ];
-

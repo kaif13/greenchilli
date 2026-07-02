@@ -13,7 +13,7 @@ export default function Footer({ scrollTo }) {
               Green Chilli<small>CHITBARAGAON</small>
             </span>
           </div>
-          <p>Chitbaragaon&apos;s favourite fast food destination since 2013.</p>
+          <p>Chitbaragaon&apos;s favourite fast food destination since 2016.</p>
         </div>
         <div className="footer-links">
           {links.map((link) => (

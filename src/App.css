@@ -16,8 +16,16 @@
   overflow-x: hidden;
   padding-top: 70px;
   background:
-    radial-gradient(circle at 80% 6%, rgba(139, 211, 79, 0.12), transparent 32rem),
-    radial-gradient(circle at 12% 18%, rgba(255, 106, 43, 0.1), transparent 28rem),
+    radial-gradient(
+      circle at 80% 6%,
+      rgba(139, 211, 79, 0.12),
+      transparent 32rem
+    ),
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(255, 106, 43, 0.1),
+      transparent 28rem
+    ),
     var(--bg);
   color: var(--cream);
   font-family: "Outfit", sans-serif;
@@ -202,7 +210,11 @@
   right: -100px;
   width: 520px;
   height: 520px;
-  background: radial-gradient(circle, rgba(139, 211, 79, 0.22), transparent 65%);
+  background: radial-gradient(
+    circle,
+    rgba(139, 211, 79, 0.22),
+    transparent 65%
+  );
   pointer-events: none;
 }
 
@@ -293,7 +305,9 @@
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .btn:hover {
@@ -558,6 +572,8 @@
 }
 
 .section {
+  content-visibility: auto;
+  contain-intrinsic-size: 760px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
@@ -1355,7 +1371,29 @@
   }
 
   .hero-stats {
-    gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin-top: 28px;
+  }
+
+  .hero-stats > div {
+    min-width: 0;
+  }
+
+  .hero-stats strong {
+    font-size: 20px;
+  }
+
+  .hero-stats small {
+    font-size: 13px;
+  }
+
+  .hero-stats span {
+    display: block;
+    font-size: 11px;
+    line-height: 1.2;
   }
 
   .hero {
@@ -1407,7 +1445,7 @@
   }
 
   .section {
-    padding: 64px 16px;
+    padding: 34px 16px;
   }
 
   .sec-sub {
@@ -1518,6 +1556,18 @@
 
   .hero h1 {
     font-size: 34px;
+  }
+
+  .hero-stats {
+    gap: 6px;
+  }
+
+  .hero-stats strong {
+    font-size: 18px;
+  }
+
+  .hero-stats span {
+    font-size: 10px;
   }
 
   .hv-card-info strong,

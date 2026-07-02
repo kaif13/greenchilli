@@ -1,7 +1,6 @@
 import Counter from "./Counter.jsx";
 import HeroVisual from "./HeroVisual.jsx";
 import Reveal from "./Reveal.jsx";
-import { waLink } from "./data.js";
 
 export default function HeroSection({ isOpen, scrollTo }) {
   return (
@@ -11,7 +10,8 @@ export default function HeroSection({ isOpen, scrollTo }) {
         <div className="hero-copy">
           <Reveal>
             <div className={`status ${isOpen ? "on" : "off"}`}>
-              <i /> {isOpen ? "Open Now · 11 AM - 11 PM" : "Closed · Opens 11 AM"}
+              <i />{" "}
+              {isOpen ? "Open Now · 11 AM - 11 PM" : "Closed · Opens 11 AM"}
             </div>
           </Reveal>
           <Reveal delay={80}>
@@ -29,16 +29,11 @@ export default function HeroSection({ isOpen, scrollTo }) {
             </p>
           </Reveal>
           <Reveal delay={240}>
-            <div className="hero-btns">
-              <a
+            <div className="hero-btns pt-6">
+              <button
                 className="btn btn-primary"
-                href={waLink("Hi Green Chilli! I have a question about your menu.")}
-                target="_blank"
-                rel="noreferrer"
+                onClick={() => scrollTo("menu")}
               >
-                Ask on WhatsApp
-              </a>
-              <button className="btn btn-ghost" onClick={() => scrollTo("menu")}>
                 View Menu
               </button>
             </div>
@@ -47,9 +42,9 @@ export default function HeroSection({ isOpen, scrollTo }) {
             <div className="hero-stats">
               <div>
                 <strong>
-                  <Counter end={50000} suffix="+" />
+                  <Counter end={10000} suffix="+" />
                 </strong>
-                <span>Guests served</span>
+                <span>Visited</span>
               </div>
               <div>
                 <strong>
@@ -59,7 +54,7 @@ export default function HeroSection({ isOpen, scrollTo }) {
               </div>
               <div>
                 <strong>
-                  <Counter end={12} />
+                  <Counter end={10} />
                 </strong>
                 <span>Years in Chitbaragaon</span>
               </div>
@@ -73,4 +68,3 @@ export default function HeroSection({ isOpen, scrollTo }) {
     </header>
   );
 }
-

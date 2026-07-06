@@ -9,7 +9,7 @@ import MenuSection from "./MenuSection.jsx";
 import Navbar from "./Navbar.jsx";
 import PartySection from "./PartySection.jsx";
 import ReviewsSection from "./ReviewsSection.jsx";
-import { waLink } from "./data.js";
+import { waLink } from "../data/siteData.js";
 
 export default function GreenChilliRestaurant() {
   const [navOpen, setNavOpen] = useState(false);
@@ -67,7 +67,7 @@ export default function GreenChilliRestaurant() {
       <Navbar navOpen={navOpen} setNavOpen={setNavOpen} scrollTo={scrollTo} />
       <HeroSection isOpen={isOpen} scrollTo={scrollTo} />
       <MenuSection />
-      {/* <GallerySection /> */}
+      <GallerySection />
       <ReviewsSection />
       <PartySection
         booking={booking}

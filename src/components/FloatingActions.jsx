@@ -1,4 +1,4 @@
-import { waLink } from "./data.js";
+import { waLink } from "../data/siteData.js";
 
 export default function FloatingActions() {
   return (

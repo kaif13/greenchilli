@@ -1,5 +1,5 @@
 import Reveal from "./Reveal.jsx";
-import { REVIEWS } from "./data.js";
+import { REVIEWS } from "../data/siteData.js";
 
 export default function ReviewsSection() {
   return (

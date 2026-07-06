@@ -1,4 +1,4 @@
-import { waLink } from "./data.js";
+import { waLink } from "../data/siteData";
 
 const links = ["menu", "gallery", "reviews", "party", "contact"];
 

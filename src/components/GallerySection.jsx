@@ -1,6 +1,6 @@
 import Dish from "./Dish.jsx";
 import Reveal from "./Reveal.jsx";
-import { GALLERY } from "./data.js";
+import { GALLERY } from "../data/siteData.js";
 
 export default function GallerySection() {
   return (

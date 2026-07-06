@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Dish from "./Dish.jsx";
 import Reveal from "./Reveal.jsx";
-import { MENU } from "./data.js";
+import { MENU } from "../data/siteData.js";
 
 const INITIAL_VISIBLE = 6;
 
@@ -60,7 +60,7 @@ export default function MenuSection() {
           <div className="menu-category-head">
             <h3>{category.title}</h3>
             <span>
-              {category.note ? `${category.note} · ` : ""}
+              {category.note ? `${category.note} - ` : ""}
               {category.items.length} items
             </span>
           </div>

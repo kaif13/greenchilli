@@ -11,7 +11,7 @@ export default function HeroSection({ isOpen, scrollTo }) {
           <Reveal>
             <div className={`status ${isOpen ? "on" : "off"}`}>
               <i />{" "}
-              {isOpen ? "Open Now · 11 AM - 11 PM" : "Closed · Opens 11 AM"}
+              {isOpen ? "Open Now · 12 AM - 8 PM" : "Closed · Opens 11 AM"}
             </div>
           </Reveal>
           <Reveal delay={80}>

@@ -1,16 +1,24 @@
-# React + Vite
+# Green Chilli Restaurant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React/Vite website for Green Chilli Pizza & Fast Food.
 
-Currently, two official plugins are available:
+## Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Menu Images
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Menu item data is in `src/data/siteData.js`.
 
-## Expanding the ESLint configuration
+To change a menu image:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Put the new image in `public/menu`.
+2. Use a JPG filename like `veg-roll.jpg`.
+3. In `src/data/siteData.js`, change the item's `img: menuImg("veg-roll")` value to match the filename without `.jpg`.
+
+Example: `public/menu/special-pizza.jpg` becomes `img: menuImg("special-pizza")`.
+
+Gallery images work the same way, but they live in `public/gallery` and use `galleryImg("image-name")`.
